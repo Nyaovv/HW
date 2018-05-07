@@ -5,3 +5,4 @@ def is_palindrome(s):
         print('True')
     else:
         print('False')
+    return(s)
