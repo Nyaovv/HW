@@ -1,8 +1,9 @@
+s = 'lols'
+
 def is_palindrome(s):
     s = str(s)
     b = s[::-1]
-    if s == b:
-        print('True')
+    if b == s:
+        return True
     else:
-        print('False')
-    return(s)
+        return False
