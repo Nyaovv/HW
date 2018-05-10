@@ -32,4 +32,3 @@ def counter():
         minute = ' минут '
 
     x = str(delta.days) + day + str(xhour) + hour + str(xminute) + minute
-    print(x)
