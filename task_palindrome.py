@@ -1,5 +1,3 @@
-s = 'lols'
-
 def is_palindrome(s):
     s = str(s)
     b = s[::-1]
