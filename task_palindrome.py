@@ -1,7 +1,12 @@
-def is_palindrome(s):
-    s = str(s)
-    b = s[::-1]
-    if b == s:
+def is_palindrome(b):
+    b = str(b)
+    b = b.lower()
+    b = b.replace('.', '')
+    b = b.replace(',', '')
+    b = b.replace('!', '')
+    b = b.replace(' ', '')
+
+    if b == b[::-1]:
         return True
     else:
         return False
