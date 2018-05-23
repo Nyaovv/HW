@@ -1,5 +1,3 @@
-# У меня не очень получилось, если честно
-
 from abc import ABCMeta, abstractmethod
 import os
 
