@@ -1,29 +1,26 @@
-from abc import ABCMeta, abstractmethod
-import os
 
-class Person:
-    name = 'name'
-    age = 0
-    course = 'Python'
+Класс персон(метакласс):
 
-    def set(self, name, age, course):
-        self.name = name
-        self.age = age
-        self.course = course
+Инит содержит словарик со всеми людьми.
+Есть переменные возраст, и номер курса
 
+Функция добавить человека добавляет его через ключ:значение
 
-class Students(Person):
-    student = 'student'
-    grades = 0
+Фенкция вывести всех людей.
 
-    def make_student(Person, name, age, course, grades):
-        student.set (Person, name, age, course)
+Абстрактная функция врайт.
 
 
-        def set_grades(self, grades):
-            self.grades = grades
-            student.grades = grades
+
+Дочерний класс учитель:
+Здесь есть параметр стаж учителя
+
+реализована функция врайт, которая записывает в инит всё что там есть
+и дополнительно стаж учителя
 
 
-Vova = Students()
-Vova.make_student("Vova", 20, "Python", 4)
+Дочерний класс ученики:
+Содержит параметр год поступления
+
+Так же реализзована функция  врайт, которая записывает всё в инит и доп.
+инфо о годе поступления
