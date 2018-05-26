@@ -79,8 +79,7 @@ class JsonParamHandler(ParamHandler):
 
     def read(self):
         with open(self.source) as f:
-            for line in f:
-                self.params = json.load(f)
+            self.params = json.load(f)
 
     def write(self):
         with open(self.source, 'w') as f:
