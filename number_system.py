@@ -54,6 +54,7 @@ def dec2hex(number): # str | 10 => 16
 
 def bin2dec(number): # int | 2  => 10
     result = 0
+    number = str(number)
     step = len(number) - 1
     for i in range(len(number)):
         pre = int(number[i]) * 2 ** step
@@ -64,6 +65,7 @@ def bin2dec(number): # int | 2  => 10
 
 
 def oct2dec(number): # int | 8  => 10
+    number = str(number)
     result = 0
     step = len(number) - 1
     for i in range(len(number)):
@@ -75,6 +77,7 @@ def oct2dec(number): # int | 8  => 10
 
 
 def hex2dec(number): # int | 16 => 10
+    number = str(number)
     result = 0
     step = len(number) - 1
     number.upper()
