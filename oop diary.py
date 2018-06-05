@@ -33,27 +33,6 @@ class Menu(object):
         ex = cls.commands.get(name)
         ex(*args, **kwargs).execute(*args, **kwargs)
 
-    counter = -1
-
-
-    def __iter__(self):
-        return self
-
-    def __next__(cls):
-        commands_items = cls.commands.items()
-#        print('AAAAAAAAA', commands_items)
-        commands_list = []
-        for i in commands_items:
-            commands_list.append(i)
-#            print('len c', len(commands_list))
-
-        if cls.counter < len(commands_list):
-            cls.counter += 1
-            return commands_list[cls.counter]
-
-
-        else:
-            raise StopIteration
 
 class CommandException(Exception):
     pass
