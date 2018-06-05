@@ -41,4 +41,5 @@ class EMailValidator(Validator):
         return True
 
 Validator.add_type('email', EMailValidator)
-validator = Validator.get_instance('email')
+v = Validator.get_instance('email')
+#print(Validator.types)
