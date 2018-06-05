@@ -42,5 +42,3 @@ class EMailValidator(Validator):
 
 Validator.add_type('email', EMailValidator)
 validator = Validator.get_instance('email')
-print(validator)
-input()
