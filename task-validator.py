@@ -40,6 +40,12 @@ class EMailValidator(Validator):
             return False
         return True
 
+class DateTimeValidator(Validator):
+    def validate(self, value):
+        pass
+
+
 Validator.add_type('email', EMailValidator)
-v = Validator.get_instance('email')
+validator = Validator.get_instance('email')
+#print(validator.validate('kak@kak.com'))
 #print(Validator.types)
