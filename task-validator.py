@@ -60,8 +60,8 @@ class DateTimeValidator(Validator):
         if len(value) == 2:
             t_value = value[1]
             t_value = t_value.split(":")
-            print('tval', t_value)
-            print(len(t_value))
+            #print('tval', t_value)
+            #print(len(t_value))
             if len(t_value) == 2:
                 if int(t_value[0]) not in range(24) or int(t_value[1]) not in range(61):
                     #print('p1')
