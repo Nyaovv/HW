@@ -57,7 +57,6 @@ class DateTimeValidator(Validator):
             #print('f2')
         else:
             return False
-
         if len(value) == 2:
             t_value = value[1]
             t_value = t_value.split(":")
@@ -71,7 +70,6 @@ class DateTimeValidator(Validator):
                 if int(t_value[0]) not in range(24) or int(t_value[1]) not in range(61) or int(t_value[2]) not in range(61):
                     #print('p2')
                     return False
-
         return True
 
 
