@@ -1,6 +1,6 @@
 from collections import namedtuple
 
-def decorator_parameters(*args):
+def return_namedtuple(*args):
     names = args
     def decorator(func):
         def wrapper(*args, **kwargs):
