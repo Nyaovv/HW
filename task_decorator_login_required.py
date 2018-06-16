@@ -10,8 +10,8 @@ def login_required(func):
             while count < 3:
                 if valid == 1:
                     return func(*args, **kwargs)
-                username = input('username: ')
-                password = input('password: ')
+                username = input()
+                password = input()
                 s = username + password
                 entered = str(hashlib.md5(s.encode()).hexdigest())
 
@@ -19,9 +19,7 @@ def login_required(func):
                     x = str(f.read())
 
                 if entered == x:
-                    print('yes')
                     valid = 1
-                    print(valid)
                 count += 1
             else:
                 return None
