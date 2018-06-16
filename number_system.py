@@ -13,7 +13,7 @@ def dec2bin(number): # str || 10 => 2
         pre = str(pre)
         result = result + pre
     result = result[::-1]
-    return result
+    return str(result)
 
 
 def dec2oct(number): # str | 10 => 8
@@ -25,7 +25,7 @@ def dec2oct(number): # str | 10 => 8
         pre = str(pre)
         result = result + pre
     result = result[::-1]
-    return result
+    return str(result)
 
 
 def dec2hex(number): # str | 10 => 16
@@ -49,7 +49,7 @@ def dec2hex(number): # str | 10 => 16
         pre = str(pre)
         result = result + pre
     result = result[::-1]
-    return result
+    return str(result)
 
 
 def bin2dec(number): # int | 2  => 10
@@ -61,7 +61,7 @@ def bin2dec(number): # int | 2  => 10
         result = result + int(pre)
         step = step - 1
     result = int(result)
-    return result
+    return int(result)
 
 
 def oct2dec(number): # int | 8  => 10
@@ -73,7 +73,7 @@ def oct2dec(number): # int | 8  => 10
         result = result + int(pre)
         step = step - 1
     result = int(result)
-    return result
+    return int(result)
 
 
 def hex2dec(number): # int | 16 => 10
@@ -99,4 +99,4 @@ def hex2dec(number): # int | 16 => 10
         pre = opa * 16 ** step
         result = result + int(pre)
         step = step - 1
-    return result
+    return int(result)
