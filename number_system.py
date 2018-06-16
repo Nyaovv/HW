@@ -80,7 +80,7 @@ def hex2dec(number): # int | 16 => 10
     number = str(number)
     result = 0
     step = len(number) - 1
-    number.upper()
+    number = number.upper()
     for i in range(len(number)):
         if number[i] == 'F':
             opa = 15
